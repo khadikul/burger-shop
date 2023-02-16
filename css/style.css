@@ -1,0 +1,569 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&family=Nunito:wght@200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Montserrat:wght@200;300;400;500;600&family=Nunito:wght@200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Montserrat:wght@200;300;400;500;600&family=Nunito:wght@200;300;400;500;600&display=swap');
+
+*{
+    font-family: 'Montserrat', sans-serif;
+    padding: 0; margin: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+    transition: width none;
+}
+
+:root{
+    --color-text: #3d2514;
+
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 5rem;
+    scroll-behavior: smooth;
+}
+
+section{
+    padding: 5rem 9%;
+}
+
+/* header css starts */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 9%;
+    position: relative;
+    z-index: 1000;
+    background: url(../img/header-bg.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+header .logo img{
+    width: 15rem;
+}
+
+
+header .right-n span{
+    text-align: right;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--color-text)
+}
+
+header .right-n #menus{
+    font-size: 2rem;
+    padding: 1rem;
+    display: none;
+}
+
+header .right-n .navbar{
+    padding-top: 1rem;
+}
+
+header .right-n .navbar a{
+    font-size: 1.8rem;
+    margin:0 1.4rem;
+    color: var(--color-text);
+    font-weight: 500;
+}
+
+header .right-n .navbar a:hover{
+    color: #ebebeb;
+}
+
+
+/* header css end */
+
+/* hero section css starts */
+
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background: url(../img/header-bg.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.home .hero-content{
+    flex: 1 1 40rem;
+}
+
+.home .hero-content p{
+    font-size: 1.4rem;
+    color: var(--color-text);
+    text-transform: uppercase;
+    font-weight: 500;
+    width: 70%;
+    padding: 1rem;
+    border: .2rem dashed var(--color-text);
+}
+
+.home .hero-content h3{
+    color: var(--color-text);
+    font-size: 8rem;
+    text-transform: uppercase;
+    font-weight: bolder;
+    text-shadow: 1px 2px 0px white;
+    font-family: 'Alfa Slab One', cursive;
+    letter-spacing: 1rem
+}
+
+.home .hero-content span{
+    color: var(--color-text);
+    font-size: 7rem;
+    text-transform: uppercase;
+    font-weight: bolder;
+    text-shadow: 1px 2px 0px white;
+    font-family: 'Alfa Slab One', cursive;
+}
+
+
+.home .hero-image{
+    flex: 1 1 40rem;
+    position: relative;
+}
+
+.home .hero-image img{
+    width: 100%;
+}
+
+/* .home .hero-image .overly-img{
+    width: 20%;
+    position: relative;
+} */
+
+.home .hero-image .overly-img img{
+    width: 20%;
+    position: absolute;
+    top: 60%;
+    left: 20%;
+}
+
+/* hero section css end */
+
+/* banner section starts */
+.banner{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.2rem;
+}
+
+.banner img:nth-child(1){
+    grid-row: 1/3;
+    grid-column: 1/3;
+    width: 100%;
+}
+
+/* banner section end */
+
+/* burger shop section css start */
+.burger-shop .heading{
+    text-align: center;
+}
+
+.burger-shop .heading span{
+    font-size: 1.5rem;
+    color: var(--color-text);
+    background: #ffc045;
+    padding: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.burger-shop .heading h3{
+    text-transform: uppercase;
+    font-size: 4rem;
+    font-weight: bold;
+    color: var(--color-text);
+    margin: 1rem;
+    font-family: 'Alfa Slab One', cursive;
+}
+
+.burger-shop .heading p{
+    padding: 1rem 15rem;
+    color: var(--color-text);
+    font-size: 1.4rem;
+}
+
+.burger-shop .burger{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.burger-shop .burger .burger-box{
+    text-align: center;
+    padding: 2rem;
+    flex: 1 1 25rem;
+}
+
+.burger-shop .burger .burger-box img{
+    width: 30rem;
+    text-align: center;
+}
+
+.burger-shop .burger .burger-box h3{
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: var(--color-text);
+    font-family: 'Alfa Slab One', cursive;
+    font-weight: normal;
+}
+
+.burger-shop .burger .burger-box p{
+    font-size: 1.3rem;
+    color: var(--color-text);
+    padding: 1rem 0;
+}
+
+.burger-shop .burger .burger-box .btn{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: white;
+    background: #cc3333;
+    padding: 1rem 2rem;
+    font-family: 'Alfa Slab One', cursive;
+    cursor: pointer;
+    font-weight: normal;
+}
+
+/* burger shop section css end */
+
+/* event section css starts */
+
+.upcoming-events .box{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    box-shadow: .5rem 1rem 1rem rgb(0 0 0 / 10%);
+    padding: 3rem;
+    background: #fff;
+}
+
+.upcoming-events .box .box-content{
+    flex: 1 1 40rem;
+    padding: 2rem 1rem;
+}
+
+.upcoming-events .box .box-content span{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: #3d3d3d;
+}
+
+.upcoming-events .box .box-content h3{
+    color: var(--color-text);
+    text-transform: uppercase;
+    font-size: 2rem;
+    padding: 1rem 0;
+    font-family: 'Alfa Slab One', cursive;
+    font-weight: normal;
+    letter-spacing: .8rem;
+}
+
+.upcoming-events .box .box-content p{
+    font-size: 1.5rem;
+    color: #3d3d3d;
+
+}
+
+
+.upcoming-events .box .box-img{
+    flex: 1 1 40rem;
+    text-align: right;
+}
+
+.upcoming-events .box .box-img img{
+    width: 80%;
+}
+
+/* event section css end */
+
+/* contatc section css starts */
+.contact{
+    background: url(../img/contact-bg.jpg) no-repeat;
+    background-position: cover;
+    height: 100vh;
+
+}
+
+.contact .heading{
+    text-align: center;
+}
+
+.contact .heading span{
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: var(--color-text);
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: .3rem;
+}
+
+.contact .heading h3{
+    font-size: 3rem;
+    color: var(--color-text);
+    text-transform: uppercase;
+    font-family: 'Alfa Slab One', cursive;
+    letter-spacing: .1rem;
+    font-weight: normal;
+    padding: 1rem 0;
+}
+
+.contact .heading, .contact .contact-form{
+    margin-top: 15rem;
+}
+
+.contact .contact-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    width: 80%;
+    margin: auto;
+}
+
+.contact .contact-form input{
+    flex: 1 1 43rem;
+    border: .1rem solid #d1d1d1;
+    padding: 1rem;
+    border-radius: .4rem;
+    text-transform: none;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 100;
+    font-size: 1.5rem;
+    letter-spacing: normal;
+
+}
+
+.contact .contact-form .btn{
+    background: #cc3333;
+    color: #fff;
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+
+/* contatc section css end */
+
+/* footer css starts */
+footer{
+    background: url(../img/footer-bg.jpg) no-repeat;
+    background-position: center;
+    background-size: auto cover;
+    padding: 5rem 9%;
+    color: white;
+}
+
+footer .box{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+footer .box .left-box{
+    flex: 1 1 43rem;
+}
+
+
+footer .box .left-box img{
+    width: 50%;
+}
+
+footer .box .left-box p{
+    font-size: 1.5rem;
+    color: #eee;
+    padding: 1rem 0;
+}
+
+footer .box .right-box{
+    flex: 1 1 43rem;
+    margin-top: 11rem;
+    margin-left: 20rem;
+}
+
+footer .box .right-box p{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+footer .box .right-box i{
+    padding: .5rem;
+}
+
+footer .creadit{
+    padding-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .creadit h3{
+    text-transform: uppercase;
+}
+
+footer .creadit .sociel a{
+    color: #040404;
+    background: #fff;
+    padding: 1rem;
+    border-radius: 50%;
+    font-size: 1.5rem;
+}
+
+/* footer css end */
+
+
+
+/*========================= RESPONSIVE MEDIA QUERIES ==================== */
+
+@media (max-width: 1024px){
+    .banner img:nth-child(1){
+        height: 100%;
+        width: 100%;
+    }
+
+    .upcoming-events .box{
+        text-align: center;
+    }
+
+    .upcoming-events .box .box-img{
+        text-align: center;
+    }
+}
+
+@media(max-width: 991px){ 
+    section{
+      padding: 2rem;
+    }
+
+    .banner{
+        grid-template-columns: 1fr;
+    }
+
+    .banner img{
+        width: 100%;
+    }
+
+    .banner img:nth-child(1){
+        grid-row: 1/1;
+        grid-column: 1/1;
+    }
+  
+}
+  
+@media(max-width: 768px){
+
+    header .right-n .delivery-details{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header .right-n .delivery-details #menus{
+        display: block;
+    }
+
+    header .right-n .navbar{
+        position: absolute;
+        top: 100%;
+        right: 0%;
+        left: 70%;
+        background: #01a75a;
+        height: 30rem;
+        border-radius: 0 0 0 1rem;
+        transform: scaleY(0);
+    }
+
+    header .right-n .navbar.active{
+        transform: scaleY(1);
+    }
+
+    header .right-n .navbar a{
+        text-align: center;
+        display: block;
+        margin: 1rem;
+        padding: .5rem 1rem;
+        color: var(--color-text);
+    }
+
+    .home .hero-content{
+        text-align: center;
+    }
+
+    .home .hero-content p{
+        width: 80%;
+        margin: auto;
+    }
+
+    .burger-shop .heading p{
+        padding: 1rem 5rem;
+    }
+
+    footer .box .right-box{
+        margin-top: 0rem;
+        margin-left: 0rem;
+        padding: .5rem;
+    }
+
+  
+}
+  
+@media(max-width: 480px){
+    html{
+        font-size: 50%;
+    }
+
+    header{
+        display: block;
+    }
+
+    header .logo{
+        text-align: center;
+    }
+
+    header .right-n .delivery-details{
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .home .hero-content h3{
+        font-size: 5rem;
+    }
+
+    .home .hero-content span{
+        font-size: 4.5rem;
+    }
+
+    .burger-shop .heading p{
+        padding: 0;
+    }
+
+    footer{
+        text-align: center;
+    }
+
+    footer .box .right-box{
+        margin-top: 0rem;
+        margin-left: 0rem;
+        text-align: center;
+        padding: .5rem;
+    }
+
+    footer .creadit{
+        display: initial;
+        text-align: center;
+    }
+
+    footer .creadit h3{
+        padding: 1.5rem 0;
+    }
+
+    
+
+}
